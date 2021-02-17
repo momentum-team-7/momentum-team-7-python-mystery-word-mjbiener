@@ -19,7 +19,6 @@ def print_word_freq(file):
 
         text =text.lower()
         text_list = text.split()
-        # text_list = text_list.remove(" ")
         text_list_copy = text_list.copy()
         
 
@@ -37,11 +36,6 @@ def print_word_freq(file):
                 if words_count[k] == index:
                     sorted_dictionary[k] = words_count[k]
         print(sorted_dictionary)
-        
-        
-# 5. go through the file word by word and keep a count of how often each word is used
-
-# pass
 
 
 if __name__ == "__main__":
