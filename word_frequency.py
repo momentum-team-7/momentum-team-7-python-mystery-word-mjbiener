@@ -14,11 +14,11 @@ def print_word_freq(file):
         for ele in text:
             if ele in punctuations:
                 text = text.replace(ele, "")
-        text = text.replace("\n", "")
+        text = text.replace("\n", " ")
         
 
         text =text.lower()
-        text_list = text.split(' ')
+        text_list = text.split()
         # text_list = text_list.remove(" ")
         text_list_copy = text_list.copy()
         
