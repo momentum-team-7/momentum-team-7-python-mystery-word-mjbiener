@@ -35,7 +35,8 @@ def print_word_freq(file):
             for k in words_count.keys():
                 if words_count[k] == index:
                     sorted_dictionary[k] = words_count[k]
-        print(sorted_dictionary)
+        for key in sorted_dictionary:
+            print( key, ':', sorted_dictionary[key])
 
 
 if __name__ == "__main__":
